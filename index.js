@@ -1,6 +1,5 @@
 require("dotenv").config();
 const express = require("express");
-var cors = require('cors');
 
 //mongoose connection
 const connectDB = require("./connect");
@@ -11,7 +10,6 @@ const App = express();
 
 // configuration
 App.use(express.json());
-App.use(cors());
 
 // route: /
 // description: To get all user
